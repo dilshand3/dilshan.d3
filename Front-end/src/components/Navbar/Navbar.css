@@ -1,0 +1,63 @@
+:root {
+    --main-color: #0b111e;
+    --purple-color: #a395e9;
+    --second-hue: 219;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.header .nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.logo{
+    position: relative;
+    left: -5%;
+}
+
+.logo a{
+    color: var(--purple-color);
+    text-decoration: none;
+    font-size:1.4em ;
+}
+
+.header .nav-container .login-register{
+    background-color: var(--purple-color);
+    border: none;
+    padding: 12px 18px;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+.nav__menu{
+    position: fixed;
+    bottom: 30px;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+ .nav__menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
+    width: 100%;
+    border-radius: 4rem;
+    padding: 10px 19px;
+    filter: blur(-10px);
+    transition: 0.4s;
+}
